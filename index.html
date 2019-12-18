@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+   
+    <div class="topnav">
+        <div class="search-container">
+          <form id="formsearch">
+            <input type="text" placeholder="Search.." name="search" id="search">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+        <!-- Actual search box -->
+     
+   
+           
+   
+    <h1> To-Do List</h1>
+<h2>Quick and  fast</h2>
+
+<div class="container">
+  
+    <form id="form">
+        <div class="form-group">
+          <label for="note">note</label>
+          <input type="text" class="form-control"  placeholder="todo" id="note">
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnhide">create</button>
+        <p id="hello" class="text-center text-danger"></p>
+      </form>
+      
+</div>
+<div class="d-flex justify-content-around">
+    <div>
+        <main id="main" class='doadd border p-4 mt-2 border-secondary' >
+
+        </main> 
+    </div>
+    <div>
+        <main id="main2" class="p-4 mt-2 border-secondary" ></main>
+    </div> 
+    
+</div>
+<section id="mydiv" class=" container" style="display: none;">
+  <form id="formedit">
+    <div class="form-group">
+      <label for="updatenote">update note</label>
+      <input type="text" class="form-control"  placeholder="todo" id="updatenote">
+    </div> 
+    <button class="btn btn-warning" id="btnupdate"> update</button>
+    <p id="hello" class="text-center text-danger"></p>
+  </form>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+     <script src="index.js"></script>
+</body>
+</html>
